@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: rgb(210, 210, 210);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        height: 150px;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 10px;
+}
+a{
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+}
+.playForm{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+button{
+    align-self: center;
+    width: 150px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    margin: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+}
+button:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px 3px gray;
+}
+button:active{
+    scale: 0.95;
+    box-shadow: none;
+}
+.minefield{
+    border: 5px solid black;
+    border-collapse: collapse;
+    margin: 25px;
+}
+.col{
+    text-align: center;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color: rgb(210, 210, 210);
+}
+.content{
+    font-size: 26pt;
+    display: none;
+    font-weight: bold;
+}
+.flag{
+    display: inline;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 10px gray;
+    background-color: rgb(210, 210, 210);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px gray;
+}
+.modalOptions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.scoreForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    margin: 5px;
+    height: 30px;
+}
+footer {
+    background-color: #2c2c2c; /* Dark grey background */
+    color: #ddd; /* Light grey text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+}

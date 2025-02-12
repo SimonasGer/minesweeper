@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #2c2c2c; /* Dark grey background */
+    color: #ddd; /* Light grey text */
+}
+
+thead {
+    background-color: #444; /* Slightly lighter grey */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #555; /* Darker grey border */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #3a3a3a; /* Slightly lighter grey */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2c2c2c; /* Dark grey */
+}
+
+tbody tr:hover {
+    background-color: #505050; /* Medium grey on hover */
+    color: #fff;
+}
+
+th {
+    text-transform: uppercase;
+}
